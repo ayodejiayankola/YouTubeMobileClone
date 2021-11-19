@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		515B1F502747EBF500347FD7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515B1F4F2747EBF500347FD7 /* Constants.swift */; };
+		515B1F522747EFE900347FD7 /* Video.swift in Sources */ = {isa = PBXBuildFile; fileRef = 515B1F512747EFE900347FD7 /* Video.swift */; };
 		51B47F422743054B007F89AA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B47F412743054B007F89AA /* AppDelegate.swift */; };
 		51B47F442743054B007F89AA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B47F432743054B007F89AA /* SceneDelegate.swift */; };
 		51B47F462743054B007F89AA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51B47F452743054B007F89AA /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		515B1F4F2747EBF500347FD7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		515B1F512747EFE900347FD7 /* Video.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Video.swift; sourceTree = "<group>"; };
 		51B47F3E2743054B007F89AA /* YouTubeMobileClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeMobileClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		51B47F412743054B007F89AA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		51B47F432743054B007F89AA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,6 +63,8 @@
 				51B47F412743054B007F89AA /* AppDelegate.swift */,
 				51B47F432743054B007F89AA /* SceneDelegate.swift */,
 				51B47F452743054B007F89AA /* ViewController.swift */,
+				515B1F4F2747EBF500347FD7 /* Constants.swift */,
+				515B1F512747EFE900347FD7 /* Video.swift */,
 				51B47F472743054B007F89AA /* Main.storyboard */,
 				51B47F4A2743054D007F89AA /* Assets.xcassets */,
 				51B47F4C2743054D007F89AA /* LaunchScreen.storyboard */,
@@ -141,6 +147,8 @@
 				51B47F462743054B007F89AA /* ViewController.swift in Sources */,
 				51B47F422743054B007F89AA /* AppDelegate.swift in Sources */,
 				51B47F442743054B007F89AA /* SceneDelegate.swift in Sources */,
+				515B1F502747EBF500347FD7 /* Constants.swift in Sources */,
+				515B1F522747EFE900347FD7 /* Video.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
