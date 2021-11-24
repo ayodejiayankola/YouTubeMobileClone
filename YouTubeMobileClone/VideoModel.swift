@@ -37,7 +37,7 @@ struct VideoModel: Decodable {
         self.description = try snippetContainer.decode(String.self, forKey: .description)
         
         // Parse the published Date
-        self.publishedDate = try snippetContainer.decode(Date.self, forKey: .publishedDate)
+   //     self.publishedDate = try snippetContainer.decode(Date.self, forKey: .publishedDate)
    
         // Parse thumbnails
         let thumbnailContainer = try snippetContainer.nestedContainer(keyedBy: CodingKeys.self, forKey: .thumbnails)

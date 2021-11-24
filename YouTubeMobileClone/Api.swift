@@ -21,7 +21,21 @@ class Api {
                 return
             }
             // Parsing the data into the Video objects Model
+            
+            do {
+                let decoder = JSONDecoder()
+                let dateFormatter = DateFormatter()
+                dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
+                
+//                decoder.dataDecodingStrategy = .custom(dateFormatter)
+                let response = try decoder.decode(Response.self, from: data!)
+                
+                dump(response)
+            } catch  {
+                print(error.localizedDescription)
+            }
         }
+        
         // Kick off the task
         dataTask.resume()
     }
