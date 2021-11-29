@@ -27,29 +27,23 @@ class Api {
                 return
             }
             // Parsing the data into the Video objects Model
-            
             do {
                 let decoder = JSONDecoder()
                 let dateFormatter = DateFormatter()
                 dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-                
 //                decoder.dataDecodingStrategy = .custom(dateFormatter)
                 let response = try decoder.decode(Response.self, from: data!)
                 if response.items != nil {
-                    
-                    
                     DispatchQueue.main.async {
                         //call the "videoFetched" method of the delegate
                         self.delegate?.videosFetched(response.items!)
                     }
-
                 }
                 dump(response)
             } catch  {
                 print(error.localizedDescription)
             }
         }
-        
         // Kick off the task
         dataTask.resume()
     }
