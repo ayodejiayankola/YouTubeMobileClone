@@ -37,12 +37,17 @@ class VideoTableViewCell: UITableViewCell {
         //set the date label
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "EEEE, MMM d, yyyy"
-        self.dateLabel.text = dateFormatter.string(from: video!.publishedDate)
+//        self.dateLabel.text = dateFormatter.string(from: video!.publishedDate)
         
         //set the image view
-        guard self.video!.thumbnail != nil else { return }
+        guard self.video!.thumbnail != "" else { return }
         
-        
+        // Check cacha before downloading data
+        if let cachedData = CacheManager.getVideoCache(self.video!.thumbnail)  {
+            // set the thumbnail image view
+            self.thumbnailImageView.image = UIImage(data: cachedData)
+            return
+        }
         // Download the thumbnail data
         let url = URL(string: self.video!.thumbnail)
         
@@ -54,6 +59,8 @@ class VideoTableViewCell: UITableViewCell {
         let dataTask = session.dataTask(with: url!) { data, response, error in
             
             if error == nil && data != nil {
+                // Save the data in the cache
+                CacheManager.setVideoCache(url!.absoluteString, data)
                 // Check that the downloaded url matches the video thumbnail url that this cell is currently set to display
                 
                 if url!.absoluteString != self.video?.thumbnail {
