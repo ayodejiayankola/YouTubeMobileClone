@@ -19,6 +19,7 @@
 		51B47F492743054B007F89AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B47F472743054B007F89AA /* Main.storyboard */; };
 		51B47F4B2743054D007F89AA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51B47F4A2743054D007F89AA /* Assets.xcassets */; };
 		51B47F4E2743054D007F89AA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 51B47F4C2743054D007F89AA /* LaunchScreen.storyboard */; };
+		51CF14C8275919CB0048B9C2 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51CF14C7275919CB0048B9C2 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		51B47F4A2743054D007F89AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51B47F4D2743054D007F89AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		51B47F4F2743054D007F89AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51CF14C7275919CB0048B9C2 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			children = (
 				510CD3C12755209C00219B86 /* VideoTableViewCell.swift */,
 				51B47F452743054B007F89AA /* ViewController.swift */,
+				51CF14C7275919CB0048B9C2 /* DetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				510CD3C22755209C00219B86 /* VideoTableViewCell.swift in Sources */,
 				515B1F522747EFE900347FD7 /* VideoModel.swift in Sources */,
 				5133B1BA274E91000094E974 /* Response.swift in Sources */,
+				51CF14C8275919CB0048B9C2 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
