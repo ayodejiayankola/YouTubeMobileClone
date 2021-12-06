@@ -39,14 +39,19 @@ class DetailsViewController: UIViewController {
         }
         
         // Check the embed url
-        
+        let embedUrl = Constants.YT_EMBED_URL + video!.videoId
         // load it into the web view
+        let url = URL(string: embedUrl)
+        let request = URLRequest(url: url!)
+        webView.load(request)
         
         // set the title
+        titleLabel.text = video!.title
         
         // Set the date
         
         // set the description
+        textView.text = video!.description
     }
 
     /*
