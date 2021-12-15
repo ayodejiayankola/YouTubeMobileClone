@@ -1,5 +1,5 @@
 # Youtube Mobile App Clone
-Display Youtube playlist for a user and individual video screen
+Display Youtube playlist for a user and individual video screen<br>
 <img src = "YouTubeMobileClone/Images/FIRST.png" width ="200" /> <img src = "YouTubeMobileClone/Images/SECOND.png" width ="200" /> 
 
 
