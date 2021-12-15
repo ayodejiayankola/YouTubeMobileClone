@@ -62,6 +62,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     //MARK:- Tableview Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        print(videos.count
+        )
         return videos.count
     }
     
